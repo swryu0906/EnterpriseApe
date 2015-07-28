@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Enterpriseape</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>g
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -14,12 +14,14 @@
       <li><%= link_to "Contact", pages_contact_path %></li>
       <li><%= link_to "Features", pages_features_path %></li>
       <li><%= link_to "FAQs", pages_faqs_path %></li>
+      <li><%= link_to "Invoices", invoices_path %></li>
       <li><%= link_to "Pricing", pages_pricing_path %></li>    
-      <li><%= link_to "Log In", root_path %></li>
     </ul>
   </div>
   
-<%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
